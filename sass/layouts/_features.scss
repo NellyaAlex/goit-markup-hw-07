@@ -1,0 +1,33 @@
+.features-subtitle {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+}
+
+.features-text {
+  line-height: 1.71;
+  margin-top: 10px;
+}
+
+.features-list {
+  display: flex;
+  gap: 30px;
+}
+
+.features-item {
+  width: calc((100% - 90px) / 4);
+}
+
+.features-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid #afb1b8; */
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}

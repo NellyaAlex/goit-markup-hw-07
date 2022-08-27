@@ -213,31 +213,12 @@
 }
 
 .secondary-btn {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
   display: flex;
   align-items: center;
   justify-content: center;
-  letter-spacing: 0.06em;
-  color: var(--btn-text-color);
-  background: var(--btn-bg-color);
   margin: 0 auto;
   margin-top: 30px;
   min-width: 200px;
-  height: 50px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border-color: transparent;
-  padding: 10px 32px;
-  transition: background-color var(--duration) var(--cubic);
-
-  &:hover,
-  &:focus {
-    background-color: var(--btn-accent-color);
-  }
 }
 
 .is-hidden {

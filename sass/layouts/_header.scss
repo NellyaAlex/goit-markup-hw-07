@@ -4,25 +4,27 @@
   border-bottom: 1px solid var(--main-border-color);
 }
 
-.header .container {
+.header__container {
   display: flex;
   align-items: center;
 }
 
-.header-nav {
+.navigation {
   display: flex;
   align-items: center;
 }
 
-.header-list {
+.navigation__list,
+.contact__item,
+.header__contact {
   display: flex;
   margin-left: auto;
   -moz-column-gap: 50px;
   column-gap: 50px;
 }
 
-.header-logo,
-.header-logo-black {
+.logo,
+.logo__black {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -30,23 +32,23 @@
   line-height: 1.19;
 }
 
-.header-logo {
+.navigation__logo {
   color: var(--main-logo-color);
   margin-right: 93px;
 }
 
-.header-logo-black {
+.logo__black {
   color: var(--second-logo-color);
 }
 
-.header-link {
+.navigation__link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-link-color);
 }
 
-.header-contact {
+.contact__link {
   display: flex;
   font-weight: 500;
   line-height: 1.14;
@@ -73,12 +75,12 @@
   }
 }
 
-.mail-icon {
+.contact__icon {
   margin-right: 10px;
   fill: #757575;
 
-  .header-contact:hover &,
-  .header-contact:focus & {
+  .contact__link:hover &,
+  .contact__link:focus & {
     fill: var(--accent-color);
   }
 }

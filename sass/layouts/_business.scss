@@ -2,25 +2,25 @@
   padding-bottom: 94px;
 }
 
-.business-title {
+.business__title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--main-title-color);
 }
 
-.business-list {
+.activities-list {
   margin-top: 50px;
   display: flex;
   gap: 30px;
 }
 
-.business-item {
+.activities-list__item {
   width: calc((100% - 60px) / 3);
   position: relative;
 }
 
-.business-text {
+.activities-list__text {
   position: absolute;
   left: 0;
   bottom: 0;

@@ -85,21 +85,21 @@
   justify-content: center;
   background: rgba(255, 255, 255, 0.1);
   transition: background-color var(--duration) var(--cubic);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .footer-soc-icon {
   fill: var(--second-icon-color);
   transition: fill var(--duration) var(--cubic);
-}
 
-.footer-soc-link:hover,
-.footer-soc-link:focus {
-  background-color: var(--accent-color);
-}
-
-.footer-soc-link:hover .footer-soc-icon,
-.footer-soc-link:focus .footer-soc-icon {
-  fill: var(--icon-accent-color);
+  .footer-soc-link:hover &,
+  .footer-soc-link:focus & {
+    fill: var(--icon-accent-color);
+  }
 }
 
 .footer-text {
@@ -129,15 +129,15 @@
   outline: none;
   transition: border-color var(--duration) var(--cubic), box-shadow var(--duration) var(--cubic);
   cursor: pointer;
-}
 
-.footer-input:hover {
-  border-color: var(--accent-color);
-}
+  &:hover {
+    border-color: var(--accent-color);
+  }
 
-.footer-input:focus {
-  border-color: whitesmoke;
-  box-shadow: 0px 0px 0px 1px whitesmoke;
+  &:focus {
+    border-color: whitesmoke;
+    box-shadow: 0px 0px 0px 1px whitesmoke;
+  }
 }
 
 .footer-form {
@@ -169,11 +169,11 @@
   border-color: transparent;
   padding: 10px 32px;
   transition: background-color var(--duration) var(--cubic);
-}
 
-.third-btn:hover,
-.third-btn:focus {
-  background-color: var(--btn-accent-color);
+  &:hover,
+  &:focus {
+    background-color: var(--btn-accent-color);
+  }
 }
 
 .send-icon {

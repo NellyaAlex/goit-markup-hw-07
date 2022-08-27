@@ -21,6 +21,11 @@
   align-items: center;
   justify-content: center;
   transition: border-color var(--duration) var(--cubic);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
 
 .clients-img-link {
@@ -34,14 +39,9 @@
 .clients-img-icon {
   fill: var(--main-icon-color);
   transition: fill var(--duration) var(--cubic);
-}
 
-.clients-img-item:hover,
-.clients-img-item:focus {
-  border-color: var(--accent-color);
-}
-
-.clients-img-link:hover .clients-img-icon,
-.clients-img-link:focus .clients-img-icon {
-  fill: var(--accent-color);
+  .clients-img-link:hover &,
+  .clients-img-link:focus & {
+    fill: var(--accent-color);
+  }
 }

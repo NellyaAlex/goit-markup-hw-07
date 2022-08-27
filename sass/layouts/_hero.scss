@@ -23,11 +23,6 @@
   margin: 0 auto;
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
-  background-color: var(--btn-accent-color);
-}
-
 .hero-btn {
   font-family: inherit;
   font-style: normal;
@@ -49,4 +44,9 @@
   border-color: transparent;
   padding: 10px 32px;
   transition: background-color var(--duration) var(--cubic);
+
+  &:hover,
+  &:focus {
+    background-color: var(--btn-accent-color);
+  }
 }

@@ -40,21 +40,21 @@
   align-items: center;
   justify-content: center;
   transition: background-color var(--duration) var(--cubic);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .team-soc-icon {
   fill: var(--main-icon-color);
   transition: fill var(--duration) var(--cubic);
-}
 
-.team-soc-link:hover,
-.team-soc-link:focus {
-  background-color: var(--accent-color);
-}
-
-.team-soc-link:hover .team-soc-icon,
-.team-soc-link:focus .team-soc-icon {
-  fill: var(--icon-accent-color);
+  .team-soc-link:hover &,
+  .team-soc-link:focus & {
+    fill: var(--icon-accent-color);
+  }
 }
 
 .team-subtitle {

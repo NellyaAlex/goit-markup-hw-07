@@ -147,7 +147,7 @@ img {
   fill: currentColor;
   transition: color var(--duration) var(--cubic);
 }
-.close-btn:hover {
+.close-btn:hover, .close-btn:focus {
   fill: var(--accent-color);
 }
 

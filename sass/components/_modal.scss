@@ -38,7 +38,8 @@
   fill: currentColor;
   transition: color var(--duration) var(--cubic);
 
-  &:hover {
+  &:hover,
+  &:focus {
     fill: var(--accent-color);
   }
 }
